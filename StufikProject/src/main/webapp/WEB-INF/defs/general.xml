@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC
+      "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+      "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+                <!-- Some templates -->
+    <definition name="common" template="/WEB-INF/layout/classic.jsp">
+        <put-attribute name="footer" value="/WEB-INF/layout/footer.jsp" />
+        <put-attribute name="header" value="/WEB-INF/layout/header.jsp" />
+    </definition>
+   
+    <definition name="index" extends="common">
+        <put-attribute name="title" value="index" />
+        <put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+    </definition>
+    
+    <definition name="adminPanel" extends="common">
+        <put-attribute name="title" value="Admin" />
+        <put-attribute name="body" value="/WEB-INF/views/adminPanel.jsp" />
+    </definition>
+    
+    <definition name="brand" extends="common">
+        <put-attribute name="title" value="Brand" />
+        <put-attribute name="body" value="/WEB-INF/views/brand.jsp" />
+    </definition>
+    
+    <definition name="city" extends="common">
+        <put-attribute name="title" value="City" />
+        <put-attribute name="body" value="/WEB-INF/views/city.jsp" />
+    </definition>
+    
+     <definition name="color" extends="common">
+        <put-attribute name="title" value="Color" />
+        <put-attribute name="body" value="/WEB-INF/views/color.jsp" />
+    </definition>
+    
+    <definition name="delivery" extends="common">
+        <put-attribute name="title" value="Delivery" />
+        <put-attribute name="body" value="/WEB-INF/views/delivery.jsp" />
+    </definition>
+    
+    <definition name="material" extends="common">
+        <put-attribute name="title" value="Material" />
+        <put-attribute name="body" value="/WEB-INF/views/material.jsp" />
+    </definition>
+    
+    <definition name="modelName" extends="common">
+        <put-attribute name="title" value="Model Name" />
+        <put-attribute name="body" value="/WEB-INF/views/modelName.jsp" />
+    </definition>
+    
+     <definition name="subCategory" extends="common">
+        <put-attribute name="title" value="SubCategory" />
+        <put-attribute name="body" value="/WEB-INF/views/subCategory.jsp" />
+    </definition>
+    
+    <definition name="category" extends="common">
+        <put-attribute name="title" value="Category" />
+        <put-attribute name="body" value="/WEB-INF/views/category.jsp" />
+    </definition>
+    
+    <definition name="description" extends="common">
+        <put-attribute name="title" value="Description" />
+        <put-attribute name="body" value="/WEB-INF/views/description.jsp" />
+    </definition>
+    
+     <definition name="login" extends="common">
+		<put-attribute name="title" value="Login" />
+		<put-attribute name="body" value="/WEB-INF/views/login.jsp" />
+	</definition>
+	
+	<definition name="registration" extends="common">
+		<put-attribute name="title" value="Registration" />
+		<put-attribute name="body" value="/WEB-INF/views/registration.jsp" />
+	</definition>
+	
+	<definition name="client" extends="common">
+		<put-attribute name="title" value="Client" />
+		<put-attribute name="body" value="/WEB-INF/views/client.jsp" />
+	</definition>
+	
+	<definition name="manager" extends="common">
+		<put-attribute name="title" value="Manager" />
+		<put-attribute name="body" value="/WEB-INF/views/manager.jsp" />
+	</definition>
+	
+	<definition name="commodity" extends="common">
+		<put-attribute name="title" value="Commodity" />
+		<put-attribute name="body" value="/WEB-INF/views/commodity.jsp" />
+	</definition>
+	
+	<definition name="subCategoryProducts" extends="common">
+		<put-attribute name="title" value="Products" />
+		<put-attribute name="body" value="/WEB-INF/views/subCategoryProducts.jsp" />
+	</definition>
+	
+	<definition name="myCabinet" extends="common">
+		<put-attribute name="title" value="My cabinet" />
+		<put-attribute name="body" value="/WEB-INF/views/myCabinet.jsp" />
+	</definition>
+	
+	<definition name="categoryPage" extends="common">
+		<put-attribute name="title" value="Categories" />
+		<put-attribute name="body" value="/WEB-INF/views/categoryPage.jsp" />
+	</definition>
+	
+	<definition name="item" extends="common">
+		<put-attribute name="title" value="Item" />
+		<put-attribute name="body" value="/WEB-INF/views/item.jsp" />
+	</definition>
+	
+	<definition name="order" extends="common">
+		<put-attribute name="title" value="Order" />
+		<put-attribute name="body" value="/WEB-INF/views/order.jsp" />
+	</definition>
+	
+	<definition name="myOrder" extends="common">
+		<put-attribute name="title" value="MyOrder" />
+		<put-attribute name="body" value="/WEB-INF/views/myOrder.jsp" />
+	</definition>
+	
+	<definition name="cart" extends="common">
+		<put-attribute name="title" value="Cart" />
+		<put-attribute name="body" value="/WEB-INF/views/cart.jsp" />
+	</definition>
+	
+	<definition name="demo" extends="common">
+		<put-attribute name="title" value="DEmo" />
+		<put-attribute name="body" value="/WEB-INF/views/demo.jsp" />
+	</definition>
+	
+</tiles-definitions>
