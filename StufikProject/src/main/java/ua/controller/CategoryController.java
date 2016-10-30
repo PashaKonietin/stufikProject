@@ -23,7 +23,7 @@ import ua.form.filter.CategoryFilterForm;
 import ua.service.CategoryService;
 import ua.service.implementation.validator.CategoryValidator;
 
-@Controller// вказуємо спрінгу що даний клас є біном і його необхідно підгрузити при старті програми
+@Controller
 public class CategoryController {
 
 	@Autowired
@@ -74,7 +74,7 @@ public class CategoryController {
 		return "redirect:/admin/category" + getParams(pageable, filter);
 	}
 	
-	@RequestMapping(value="/admin/category/update/{id}")
+	@RequestMapping("/admin/category/update/{id}")
 	public String update(Model model,
 						@PathVariable int id,
 						@PageableDefault(5) Pageable pageable,
@@ -84,7 +84,7 @@ public class CategoryController {
 		return "category";
 	}
 	
-	@RequestMapping(value = "/admin/category/delete/{id}")
+	@RequestMapping("/admin/category/delete/{id}")
 	public String delete(@PathVariable int id,
 						 @PageableDefault(5) Pageable pageable,
 						 @ModelAttribute("filter") CategoryFilterForm filter){

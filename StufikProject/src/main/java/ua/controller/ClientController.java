@@ -22,7 +22,7 @@ import ua.service.CityService;
 import ua.service.ClientService;
 import ua.service.implementation.editor.CityEditor;
 
-@Controller// вказуємо спрінгу що даний клас є біном і його необхідно підгрузити при старті програми
+@Controller
 public class ClientController {
 
 	@Autowired

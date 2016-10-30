@@ -33,6 +33,7 @@ public class CartServiceImpl implements CartService{
 	}
 
 	@Override
+	@Transactional
 	public void deleteCommodity(int id, int clientId) {
 		Client client = clientService.findById(clientId);
 		List<Commodity> commodities = commodityService.findAllCommoditiesByClient(clientId);

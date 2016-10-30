@@ -22,7 +22,7 @@ import ua.form.filter.CityFilterForm;
 import ua.service.CityService;
 import ua.service.implementation.validator.CityValidator;
 
-@Controller// вказуємо спрінгу, що даний клас є біном і його необхідно підгрузити при старті програми
+@Controller
 public class CityController {
 
 	@Autowired
@@ -65,7 +65,7 @@ public class CityController {
 		return "redirect:/admin/city" + getParams(pageable, filter);
 	}
 	
-	@RequestMapping(value="/admin/city/update/{id}")
+	@RequestMapping("/admin/city/update/{id}")
 	public String update(@PathVariable int id,
 						 Model model,
 						 @PageableDefault(5) Pageable pageable,
@@ -75,7 +75,7 @@ public class CityController {
 		return "city";
 	}
 	
-	@RequestMapping(value="/admin/city/delete/{id}")
+	@RequestMapping("/admin/city/delete/{id}")
 	public String delete(@PathVariable int id,
 						@PageableDefault(5) Pageable pageable,
 						@ModelAttribute("filter") CityFilterForm filter){

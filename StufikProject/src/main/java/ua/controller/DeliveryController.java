@@ -22,7 +22,7 @@ import ua.form.filter.DeliveryFilterForm;
 import ua.service.DeliveryService;
 import ua.service.implementation.validator.DeliveryValidator;
 
-@Controller// вказуємо спрінгу що даний клас є біном і його необхідно підгрузити при старті програми
+@Controller
 public class DeliveryController {
 
 	@Autowired

@@ -36,7 +36,7 @@ import ua.service.implementation.editor.MaterialEditor;
 import ua.service.implementation.editor.ModelNameEditor;
 import ua.service.implementation.editor.SubCategoryEditor;
 
-@Controller// вказуємо спрінгу що даний клас є біном і його необхідно підгрузити при старті програми
+@Controller
 public class CommodityController {
 
 	

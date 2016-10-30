@@ -24,7 +24,7 @@ import ua.form.filter.ColorFilterForm;
 import ua.service.ColorService;
 import ua.service.implementation.validator.ColorValidator;
 
-@Controller// вказуємо спрінгу що даний клас є біном і його необхідно підгрузити при старті програми
+@Controller
 public class ColorController {
 
 	@Autowired
